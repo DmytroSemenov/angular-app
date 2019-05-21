@@ -1,0 +1,7 @@
+<app-toolbar></app-toolbar>
+
+<app-modal [comment]="selectedComment"></app-modal>
+
+<div>
+  <app-table (commentSelectEvent)="onCommentSelect($event)" [comments]="defaultComments"></app-table>
+</div>
