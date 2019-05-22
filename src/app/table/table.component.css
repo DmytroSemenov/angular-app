@@ -1,6 +1,12 @@
+div{
+  height: 800px;
+  overflow-y: scroll;
+}
+
 table {
-  background-color: #ccc;
   margin: 10px auto;
+  background-color: #ccc;
+  border-collapse: collapse;
   cursor: pointer;
 }
 

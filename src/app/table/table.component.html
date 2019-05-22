@@ -1,9 +1,10 @@
+<div>
 <table>
   <tr>
-    <th>ID</th>
-    <th>Post ID</th>
-    <th>Author</th>
-    <th>Email</th>
+    <th (click)="sortTableById('id')">ID</th>
+    <th (click)="sortTableById('postId')">Post ID</th>
+    <th (click)="sortTableByName('name')">Author</th>
+    <th (click)="sortTableByName('email')">Email</th>
   </tr>
 
   <tr
@@ -17,3 +18,4 @@
     <td>{{ comment.email }}</td>
   </tr>
 </table>
+</div>
