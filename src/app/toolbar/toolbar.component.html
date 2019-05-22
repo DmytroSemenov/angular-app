@@ -1,6 +1,8 @@
-<div>
-  <input [(ngModel)]="currentValue" />
+<div class="input-field">
+  <label>Input text to filter
+    <input [(ngModel)]="currentValue" />
+  </label>
 </div>
-<div>
+<div hidden>
   {{ currentValue }}
 </div>

@@ -13,7 +13,7 @@ export class ModalComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.comment);
+    // console.log(this.comment);
   }
 
 }
