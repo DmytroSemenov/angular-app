@@ -1,6 +1,7 @@
 <div class="input-field">
-  <label>Input text to filter
-    <input [(ngModel)]="currentValue" />
+  <label
+    >Input text to filter by Author
+    <input [(ngModel)]="currentValue" (ngModelChange)="filterByName(currentValue)" />
   </label>
 </div>
 <div hidden>

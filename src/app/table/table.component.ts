@@ -31,24 +31,21 @@ export class TableComponent implements OnInit {
     this.commentSelectEvent.emit(comment);
   }
 
-  sortTableById(field) {
-    if (this.comments[0][field] === 1) {
+  sortTableBy(field) {
+    if (
+      this.comments[0][field] < this.comments[this.comments.length - 1][field]
+    ) {
       this.comments.sort((a, b) => {
-        return b[field] - a[field];
+        if (b[field] > a[field]) return 1;
+        if (b[field] < a[field]) return -1;
       });
     } else {
-      this.comments.sort((a, b) => {
-        return a[field] - b[field];
-      });
-    }
-  }
-
-  sortTableByName(field) {
-    if (true) {
       this.comments.sort((a, b) => {
         if (b[field] > a[field]) return -1;
         if (b[field] < a[field]) return 1;
       });
     }
   }
+
+
 }
