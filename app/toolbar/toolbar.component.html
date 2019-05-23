@@ -1,0 +1,9 @@
+<div class="input-field">
+  <label
+    >Input text to filter by Author
+    <input [(ngModel)]="currentValue" (ngModelChange)="filterByName(currentValue)" />
+  </label>
+</div>
+<div hidden>
+  {{ currentValue }}
+</div>

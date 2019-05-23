@@ -1,0 +1,21 @@
+<div>
+<table>
+  <tr>
+    <th (click)="sortTableBy('id')">ID</th>
+    <th (click)="sortTableBy('postId')">Post ID</th>
+    <th (click)="sortTableBy('name')">Author</th>
+    <th (click)="sortTableBy('email')">Email</th>
+  </tr>
+
+  <tr
+    *ngFor="let comment of comments"
+    (click)="selectComment(comment)"
+    [class.selected]="comment === selectedComment"
+  >
+    <td>{{ comment.id }}</td>
+    <td>{{ comment.postId }}</td>
+    <td>{{ comment.name }}</td>
+    <td>{{ comment.email }}</td>
+  </tr>
+</table>
+</div>

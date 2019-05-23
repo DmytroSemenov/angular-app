@@ -1,0 +1,10 @@
+<app-toolbar (filterEvent)="inputChanged($event)"></app-toolbar>
+
+<app-modal [comment]="selectedComment"></app-modal>
+
+<div>
+  <app-table
+    (commentSelectEvent)="onCommentSelect($event)"
+    [comments]="filteredComment"
+  ></app-table>
+</div>
